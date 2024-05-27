@@ -84,7 +84,7 @@ function BookTypeHasName(name:string, bookType:number, akBook:Form | null) : boo
 }
 
 //if checkIfNameExists is true, function will add numbers to name until it's unique / not found for the book type. 
-//if checkIfNameExists and the name already exists for the book type, it will not set the name and return false.
+//if checkIfNameExists is false and the name already exists for the book type, it will not set the name and return false.
 function setBookName(akBookRef:ObjectReference, name:string, checkIfNameExists:boolean) : boolean {
     //trace("Setting book name to " + name)
     //Debug.notification("Setting book name to " + name)
